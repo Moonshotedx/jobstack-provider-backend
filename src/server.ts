@@ -31,7 +31,7 @@ async function main() {
   app.setSerializerCompiler(serializerCompiler);
 
   // CORS Setup
-  const allowed_origins = [''];
+  const allowed_origins = ['https://jsp.xceleratordev.com'];
 
   if (process.env.NODE_ENV !== 'production') {
     allowed_origins.push('http://localhost:3000');
