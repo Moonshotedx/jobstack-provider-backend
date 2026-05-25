@@ -27,11 +27,11 @@ import { notificationClient } from '@lib/notification/notification_client';
 
 const senderName = process.env.APP_NAME;
 
-if (!senderName) {
-  throw Error('Env Variable EMAIL_SENDER (name) not set');
-}
+// if (!senderName) {
+//   throw Error('Env Variable EMAIL_SENDER (name) not set');
+// }
 
-const allowed_origins = [];
+const allowed_origins = ['https://jsp.xceleratordev.com'];
 
 if (process.env.NODE_ENV !== 'production') {
   allowed_origins.push('http://localhost:3000');
