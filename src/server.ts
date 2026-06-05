@@ -88,14 +88,14 @@ async function main() {
   await app.register(formDataPlugin);
 
   // Rate Limit setup: ban can be added
-  app.register(fastifyRateLimit, {
-    global: true,
-    redis,
-    max: 100,
-    ban: 3,
-    timeWindow: '1 minute',
-    skipOnError: true,
-  });
+  // app.register(fastifyRateLimit, {
+  //   global: true,
+  //   redis,
+  //   max: 100,
+  //   ban: 3,
+  //   timeWindow: '1 minute',
+  //   skipOnError: true,
+  // });
 
   // Application Routes Setup
   await app.register(HomepageRoute);
